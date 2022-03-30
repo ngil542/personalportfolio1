@@ -4,16 +4,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
-  margin: 0;
+  margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #6a9485;
+  padding-top: 100px;
 }
 #welcome-section {
   /* User Story #10 */
   height: 100vh;
-
+ 
+}
+#welcome-info {
+  padding-top: 100px;
+  padding-left: 530px;
 }
 #navbar {
-  display: absolute;
+  /* User Story #11 */
+  position: fixed;
+  width: 100%;
+  top: 0px;
   overflow: hidden;
   background-color: #333;
   
@@ -23,20 +32,34 @@ body {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 40px;
   text-decoration: none;
   font-size: 17px;
+  display: inline-block;
+  
 }
 
 #navbar a:hover {
   background-color: #ddd;
   color: black;
 }
-
-#navbar a.active {
-  background-color: #6a9485;
-  color: white;
+#projects {
+  
+ 
+  padding-top: 10px;
+  padding-left: 100px;
 }
+
+#link {
+  padding-top: 400px;
+  padding-left: 570px;
+}
+li {
+  
+  list-style-type: none;
+}
+
+
 /*--User Story #9--*/
 @media screen and (max-width: 700px) {
   #navbar {
@@ -44,9 +67,7 @@ body {
     height: auto;
     position: relative;
   }
-  #navbar a {float: left;}
-  div.content {margin-left: 0;}
-}
+} 
 
 @media screen and (max-width: 400px) {
   #navbar a {
@@ -57,46 +78,41 @@ body {
 </style>
 
 
-<body>
-
-
 <!--User Story #6, navbar-->
 <nav id="navbar">
     <!--User Story #7, contains nav-links-->
-    <ul class="nav-list">
+    <ul class="nav-link">
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#link">Link</a></li>
     </ul>
 </nav>
-
+<body>
 
 <!--User Story #1, #2-->    
 <section id="welcome-section">
-    <h1>Welcome to my Page</h1>
+    <h1 id="welcome-info">Welcome to my Page</h1>
 
 </section>
 
 <!--User Story #3-->
 <section id="projects">
-    <h2>Projects</h2><br>
-    <ul>
-        <li>Machine Learning and Intrusion Detection Research</li>
-        
-       
-        
-    </ul>
+    <h2>Projects:</h2><br>
+   
 
     <!--User Story #4-->
-    <section id="Machine_Learning_and_Intrusion_Detection_Research">
-      <header id="Machine_Learning_Techniques_for_Intrusion_Detection_Research">
-        <h1>Machine Learning Techniques for Intrusion Detection Research</h1>
-        </header>
+    <section>
+      
       <!--User Story #5, place link to project for navbar-->
         <li><a class="project-tile" href="https://ngil542.github.io/individualproj/">Machine Learning Techniques and Intrusion Detection Research</a></li>
     </section>
 
 
-  </section>
+</section>
 
+<section id="link">
+ 
+    <a id="profile-link" href="https://ngil542.github.io/personalportfolio1/" target="_blank">Personal Portfolio Link</a>
+  </section>
 
 <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
