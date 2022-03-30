@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#welcome-section {
+  /* User Story #10 */
+  height: 100vh;
+
+}
+#navbar {
+  display: absolute;
+  overflow: hidden;
+  background-color: #333;
+  
+}
+
+#navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #6a9485;
+  color: white;
+}
+/*--User Story #9--*/
+@media screen and (max-width: 700px) {
+  #navbar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  #navbar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  #navbar a {
+    text-align: center;
+    float: none;
+  }
+}
+</style>
+
+
+<body>
+
+
+<!--User Story #6, navbar-->
+<nav id="navbar">
+    <!--User Story #7, contains nav-links-->
+    <a class="active" href="#ML">ML and Intrusion Detection</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    
+</nav>
+<div class="mainContent">
+<!--User Story #1, #2-->    
+<welcome id="welcome-section">
+    <h1>Welcome to my Page</h1>
+
+</welcome>
+
+<!--User Story #3-->
+<projects id="projects">
+    <h2>Projects</h2><br>
+    <ul>
+        <li>Machine Learning and Intrusion Detection Research</li>
+        
+       
+        
+    </ul>
+
+    <!--User Story #4-->
+    <project1 class="project-tile" id="ML">
+        <!--User Story #5, place link to project for navbar-->
+        <li><a href="https://ngil542.github.io/individualproj/">Machine Learning Techniques and Intrusion Detection</a></li>
+    </project1>
+
+
+</projects>
+
+</div>
+
+
+</body>
+
+
+
+
+</html>
