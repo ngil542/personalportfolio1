@@ -63,21 +63,20 @@ body {
 <!--User Story #6, navbar-->
 <nav id="navbar">
     <!--User Story #7, contains nav-links-->
-    <a class="active" href="#ML">ML and Intrusion Detection</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-    
+    <ul class="nav-list">
+    <li><a href="#projects">Projects</a></li>
+    </ul>
 </nav>
-<div class="mainContent">
+
+
 <!--User Story #1, #2-->    
-<welcome id="welcome-section">
+<section id="welcome-section">
     <h1>Welcome to my Page</h1>
 
-</welcome>
+</section>
 
 <!--User Story #3-->
-<projects id="projects">
+<section id="projects">
     <h2>Projects</h2><br>
     <ul>
         <li>Machine Learning and Intrusion Detection Research</li>
@@ -87,16 +86,19 @@ body {
     </ul>
 
     <!--User Story #4-->
-    <project1 class="project-tile" id="ML">
-        <!--User Story #5, place link to project for navbar-->
-        <li><a href="https://ngil542.github.io/individualproj/">Machine Learning Techniques and Intrusion Detection</a></li>
-    </project1>
+    <section id="Machine_Learning_and_Intrusion_Detection_Research">
+      <header id="Machine_Learning_Techniques_for_Intrusion_Detection_Research">
+        <h1>Machine Learning Techniques for Intrusion Detection Research</h1>
+        </header>
+      <!--User Story #5, place link to project for navbar-->
+        <li><a class="project-tile" href="https://ngil542.github.io/individualproj/">Machine Learning Techniques and Intrusion Detection Research</a></li>
+    </section>
 
 
-</projects>
+  </section>
 
-</div>
 
+<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 </body>
 
